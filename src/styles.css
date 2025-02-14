@@ -1,1 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-openSans: "OpenSans", sans-serif;
+}
+
+@theme {
+  --color-white: #fff;
+  --primary-color: #274C5B;
+  --green-color: #7EB693;
+  --yellow-color: #EFD372;
+  --light-gray-color: #D4D4D4;
+  --dark-gray-color: #525C60;
+  --ghost-color: #F9F8F8;
+  --soft-color: #EFF6F1;
+}
+
+.text-primary {
+  @apply text-[#274C5B];
+}
+.text-green {
+  @apply text-[#7EB693];
+}
+.text-yellow {
+  @apply text-[#EFD372];
+}
+.text-lightGray {
+  @apply text-[#D4D4D4];
+}
+.text-darkGray {
+  @apply text-[#525C60];
+}
+.text-ghostWhite {
+  @apply text-[#F9F8F8];
+}
+.text-softWhite {
+  @apply text-[#EFF6F1];
+}
+
+body {
+  font-family: "Roboto", "OpenSans", sans-serif;
+}
