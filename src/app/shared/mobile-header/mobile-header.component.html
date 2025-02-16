@@ -1,0 +1,41 @@
+<header class="grid grid-cols-[1fr_1fr_1fr] items-center md:hidden shadow-sm  px-2 sm:px-5 py-5">
+  <div class="drawer-header card justify-start">
+    <p-drawer [(visible)]="visible">
+      <div class="container mx-auto px-2 sm:px-5 lg:px-10 max-w-[1400px]">
+        <nav>
+          <ul class="flex flex-col gap-y-5">
+            @for (nav of navLinks; track nav.id) {
+              <li>
+                <a [routerLink]="nav.routeLink"
+                   routerLinkActive="text-fern-green font-medium"
+                   class="text-[#7C8379] hover:text-[#3D5B58] hover:font-medium transition-colors duration-200 text-lg">
+                  {{ nav.name }}
+                </a>
+              </li>
+            }
+          </ul>
+        </nav>
+      </div>
+    </p-drawer>
+    <p-button (click)="visible = true" class="openMenu">
+      <img src="/icons/burger.svg" alt="" class="size-6" />
+    </p-button>
+  </div>
+
+  <a routerLink="/">
+    <img src="/Logo2.svg" alt="Logo" class="h-8 sm:h-10" />
+  </a>
+
+  <div class="flex justify-end items-center gap-x-2">
+    <a routerLink="/" class="cursor-pointer size-8 flex items-center justify-center rounded-full bg-slate-50">
+      <img src="/icons/search.svg" alt="" class="h-4 sm:h-6" />
+    </a>
+    <a routerLink="/" class="cursor-pointer size-8 flex items-center justify-center rounded-full bg-slate-50">
+      <img src="/icons/user.svg" alt="" class="h-4 sm:h-6" />
+    </a>
+    <a routerLink="/" class="cursor-pointer size-8 flex items-center justify-center rounded-full bg-slate-50">
+      <img src="/icons/cart.svg" alt="" class="h-4 sm:h-6" />
+    </a>
+  </div>
+
+</header>

@@ -21,25 +21,52 @@
 .text-primary {
   @apply text-[#274C5B];
 }
+
+.text-fern-green {
+  @apply text-[#3D5B58];
+}
+
 .text-green {
   @apply text-[#7EB693];
 }
+
 .text-yellow {
   @apply text-[#EFD372];
 }
+
 .text-lightGray {
   @apply text-[#D4D4D4];
 }
+
 .text-darkGray {
   @apply text-[#525C60];
 }
+
 .text-ghostWhite {
   @apply text-[#F9F8F8];
 }
+
 .text-softWhite {
   @apply text-[#EFF6F1];
 }
 
 body {
   font-family: "Roboto", "OpenSans", sans-serif;
+}
+
+.p-drawer {
+  background: #f2f4f2db !important;
+  transition: transform 200ms ease, visibility 200ms ease !important;
+  /*height: calc(100% - 82px) !important;*/
+  /*top: 82px !important;*/
+}
+
+.p-overlay-mask.p-drawer-mask {
+  background: rgb(61, 77, 81, 0.5) !important;
+}
+
+.openMenu .p-button {
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
 }
