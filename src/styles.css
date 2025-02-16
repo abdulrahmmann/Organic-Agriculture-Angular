@@ -1,10 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --font-openSans: "OpenSans", sans-serif;
+  --font-yellowtail: "Yellowtail", sans-serif;
+  --font-bebasNeue: "BebasNeue", sans-serif;
+}
+
+body {
+  font-family: "Roboto", "OpenSans", sans-serif;
+
+  background-image: url("../public/right-nuts.svg"), url("../public/right-nuts.svg") !important;
+  background-position: -7% 43vh, 107% 24vh !important;
+  background-repeat: no-repeat !important;
+  background-color: #ffffff !important;
+  background-size: 17vw !important;
+   background-attachment: scroll !important;
+}
+
+.custom-container {
+  @apply container mx-auto px-4 sm:px-10 lg:px-32 max-w-[1400px]
 }
 
 @theme {
@@ -33,6 +49,9 @@
 .text-yellow {
   @apply text-[#EFD372];
 }
+.bg-yellow {
+  @apply bg-[#EFD372];
+}
 
 .text-lightGray {
   @apply text-[#D4D4D4];
@@ -50,10 +69,6 @@
   @apply text-[#EFF6F1];
 }
 
-body {
-  font-family: "Roboto", "OpenSans", sans-serif;
-}
-
 .p-drawer {
   background: #f2f4f2db !important;
   transition: transform 200ms ease, visibility 200ms ease !important;
@@ -69,4 +84,17 @@ body {
   background: transparent !important;
   border: 0 !important;
   padding: 0 !important;
+}
+
+.homeHero {
+  height: calc(100vh - 82px);
+  background: url("../public/banners/home-banner.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .homeHero {
+    height: calc(100vh - 72px);
+  }
 }

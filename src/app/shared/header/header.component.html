@@ -1,5 +1,5 @@
 <header class="h-[82px] hidden md:block w-full bg-[#ffffffe8] z-[999999] relative backdrop-blur-[4px] shadow-sm">
-<div class="container mx-auto px-2 sm:px-5 lg:px-10 max-w-[1400px]">
+<div class="custom-container">
     <div class="grid grid-cols-[auto_auto_1fr] gap-x-8 items-center py-5">
       <a routerLink="/">
         <img src="/Logo2.svg" alt="Logo" class="h-10" />
@@ -9,7 +9,7 @@
           @for (nav of navLinks; track nav.id) {
             <li>
               <a [routerLink]="nav.routeLink"
-                 routerLinkActive="text-fern-green font-medium"
+                 routerLinkActive="text-fern-green font-semibold"
                  class="text-[#7C8379] hover:text-[#3D5B58] hover:font-medium transition-colors duration-200">
                 {{ nav.name }}
               </a>
