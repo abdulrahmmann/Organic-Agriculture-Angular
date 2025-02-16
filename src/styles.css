@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Roboto", "OpenSans", sans-serif;
+  font-family: "Poppins", "OpenSans", sans-serif;
 
   background-image: url("../public/right-nuts.svg"), url("../public/right-nuts.svg") !important;
   background-position: -7% 43vh, 107% 24vh !important;
@@ -97,4 +97,21 @@ body {
   .homeHero {
     height: calc(100vh - 72px);
   }
+}
+
+footer:before {
+  content: '';
+  width: 100%;
+  height: 121px;
+  top: -110px;
+  left: 0;
+  position: absolute;
+  background-size: contain;
+  background: url("../public/footers.svg") no-repeat bottom center;
+}
+
+.input-subscribe #in_label {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
 }
