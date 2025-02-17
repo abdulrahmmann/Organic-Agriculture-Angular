@@ -1,0 +1,24 @@
+<article class="rounded-xl bg-ghostWhite max-h-[414px] h-full max-w-[335px] w-full mx-auto">
+  <div class="px-5 py-3 h-full">
+    <div class="flex flex-col justify-between h-full">
+
+      <h2 class="text-white text-xs font-semibold bg-primary rounded-xl px-2 py-1.5 w-fit">{{ type() }}</h2>
+
+      <img [src]="image()" alt="product image" class="my-3 w-full max-h-[260px] h-full mx-auto mix-blend-darken"/>
+
+      <div>
+        <h2 class="text-primary text-base font-semibold border-b border-[#DEDDDD] py-1.5">{{ name() }}</h2>
+        <div class="flex items-center justify-between mt-4 flex-wrap gap-y-2">
+          <div class="flex items-center gap-x-3">
+            <h2 class="text-lightGray text-base font-semibold line-through">{{ price() | currency }}</h2>
+            <h2 class="text-primary text-base font-semibold">{{ (price() - offer()) | currency }}</h2>
+          </div>
+          <div class="card flex justify-center">
+            <p-rating [readonly]="true" [stars]="5"/>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</article>

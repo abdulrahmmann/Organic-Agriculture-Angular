@@ -37,6 +37,9 @@ body {
 .text-primary {
   @apply text-[#274C5B];
 }
+.bg-primary {
+  @apply bg-[#274C5B];
+}
 
 .text-fern-green {
   @apply text-[#3D5B58];

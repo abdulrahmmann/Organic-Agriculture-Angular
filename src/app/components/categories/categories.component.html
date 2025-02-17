@@ -1,0 +1,22 @@
+<section id="categories" class="w-full bg-white py-20">
+  <div class="custom-container">
+    <app-heading-title title="Categories" subTitle="Our Products" classTitle="text-center"
+                       classSubTitle="text-center text-base"/>
+
+    <div class="mt-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+        @for (p of products; track p.id) {
+          <app-product-item
+            [name]="p.name"
+            [type]="p.type"
+            [image]="p.image"
+            [rating]="p.rating"
+            [price]="p.price"
+            [offer]="p.offer"
+          />
+        }
+      </div>
+    </div>
+
+  </div>
+</section>
