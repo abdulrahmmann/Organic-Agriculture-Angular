@@ -2,7 +2,7 @@ import {Component, input} from '@angular/core';
 import {NgClass} from '@angular/common';
 
 @Component({
-  selector: 'app-custom-button',
+  selector: 'app-shine-button',
   imports: [
     NgClass
   ],
@@ -11,5 +11,5 @@ import {NgClass} from '@angular/common';
 })
 export class CustomButtonComponent {
   title = input.required<string>();
-  className = input.required<string>();
+  className = input<string>();
 }

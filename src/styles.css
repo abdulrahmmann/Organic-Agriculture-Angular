@@ -115,3 +115,13 @@ footer:before {
   border: none !important;
   padding: 0 !important;
 }
+
+.offer1 {
+  background: url("../public/natural-bg.png") center center no-repeat ;
+  background-size: cover;
+}
+.offer2 {
+  background: url("../public/offer-bg.png") center center no-repeat ;
+  background-size: cover;
+}
+
