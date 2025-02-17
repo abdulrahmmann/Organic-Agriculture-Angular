@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat !important;
   background-color: #ffffff !important;
   background-size: 17vw !important;
-   background-attachment: scroll !important;
+  background-attachment: scroll !important;
 }
 
 .custom-container {
@@ -49,6 +49,7 @@ body {
 .text-yellow {
   @apply text-[#EFD372];
 }
+
 .bg-yellow {
   @apply bg-[#EFD372];
 }
@@ -63,6 +64,10 @@ body {
 
 .text-ghostWhite {
   @apply text-[#F9F8F8];
+}
+
+.bg-ghostWhite {
+  @apply bg-[#F9F8F8];
 }
 
 .text-softWhite {
@@ -117,11 +122,12 @@ footer:before {
 }
 
 .offer1 {
-  background: url("../public/natural-bg.png") center center no-repeat ;
+  background: url("../public/natural-bg.png") center center no-repeat;
   background-size: cover;
 }
+
 .offer2 {
-  background: url("../public/offer-bg.png") center center no-repeat ;
+  background: url("../public/offer-bg.png") center center no-repeat;
   background-size: cover;
 }
 
