@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {LayoutComponent} from "../../shared/layout/layout.component";
 
 @Component({
   selector: 'app-news-detail',
-  imports: [],
+    imports: [
+        LayoutComponent
+    ],
   templateUrl: './news-detail.component.html',
   styles: ``
 })

@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {LayoutComponent} from "../../shared/layout/layout.component";
 
 @Component({
   selector: 'app-not-found',
-  imports: [],
+    imports: [
+        LayoutComponent
+    ],
   templateUrl: './not-found.component.html',
   styles: ``
 })
