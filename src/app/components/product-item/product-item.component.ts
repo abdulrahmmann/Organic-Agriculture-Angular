@@ -1,12 +1,14 @@
 import {Component, input} from '@angular/core';
 import {Rating} from 'primeng/rating';
 import {CurrencyPipe} from '@angular/common';
+import {Image} from 'primeng/image';
 
 @Component({
   selector: 'app-product-item',
   imports: [
     Rating,
     CurrencyPipe,
+    Image,
   ],
   templateUrl: './product-item.component.html',
 })
